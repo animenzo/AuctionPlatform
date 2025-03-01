@@ -14,9 +14,10 @@ function AuctionList() {
     useEffect(() => {
         const fetchAuctionItems = async () => {
             const res = await axios.get("/api/auctions");
-            setAuctionItems(res.data);
-            setSearchResults(res.data);
-            setTotalPages(Math.ceil(res.data.length / ITEMS_PER_PAGE));
+            const data = Array.isArray(res.data) ? res.data : [];
+            setAuctionItems(data);
+            setSearchResults(data);
+            setTotalPages(Math.ceil(data.length / ITEMS_PER_PAGE));
         };
         fetchAuctionItems();
     }, []);
