@@ -11,15 +11,9 @@ const NavBar = () => {
 		<nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
 			<div className="container">
 				<Link className="navbar-brand text-warning fw-bold" to="/">
-					Auction
+					BidKar
 				</Link>
-				<button
-					className="navbar-toggler"
-					type="button"
-					onClick={() => setIsOpen(!isOpen)}
-				>
-					<span className="navbar-toggler-icon"></span>
-				</button>
+			
 				<div className=''>
 					<ul className="navbar-nav ms-auto">
 						<li className="nav-item">

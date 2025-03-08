@@ -45,12 +45,7 @@ function Signup() {
 	return (
 		<div
 			className="d-flex justify-content-center align-items-center min-vh-100"
-			style={{
-				backgroundImage:
-					"url('https://source.unsplash.com/1600x900/?signup,technology')",
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-			}}
+			
 		>
 			<div className="card bg-dark text-white p-4 shadow-lg" style={{ maxWidth: "400px", width: "100%", opacity: 0.9 }}>
 				<h2 className="text-center mb-4">Signup</h2>
@@ -61,7 +56,7 @@ function Signup() {
 						</span>
 						<input
 							type="text"
-							className="form-control bg-dark text-white border-secondary"
+							className="form-control bg-dark text-white border-secondary placeholder-secondary"
 							placeholder="Username"
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}

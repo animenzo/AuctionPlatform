@@ -9,7 +9,7 @@ import Logout from "./components/Logout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { useState, useEffect } from "react";
 import { AuthProvider } from "./contexts/index";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import Home from "./components/Home";
 import CreateAuctionItem from "./components/CreateAuctionItem";
 import EditAuctionItem from "./components/EditAuctionItem";

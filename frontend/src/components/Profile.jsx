@@ -7,6 +7,8 @@ const ITEMS_PER_PAGE = 3;
 
 function Profile() {
 	const [user, setUser] = useState(null);
+	
+
 	const [auctions, setAuctions] = useState([]);
 	const [bids, setBids] = useState([]);
 	const [wonAuctions, setWonAuctions] = useState([]);
@@ -23,12 +25,14 @@ function Profile() {
 				.split("; ")
 				.find((row) => row.startsWith("jwt="))
 				?.split("=")[1];
+			
 
 			if (token) {
 				try {
 					const res = await axios.post(endpoint, {}, { headers: { Authorization: `Bearer ${token}` } });
 					setData(res.data[Object.keys(res.data)[0]]);
 					setTotalPages(Math.ceil(res.data[Object.keys(res.data)[0]].length / ITEMS_PER_PAGE));
+					
 				} catch (error) {
 					console.error(error);
 				}
