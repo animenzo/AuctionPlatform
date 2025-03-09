@@ -130,12 +130,28 @@ AuctionPlatform/
 - **Project Structure**: Separates concerns between the backend and frontend, making it easier to manage and scale.
 - **Environment Configuration**: Uses environment variables to configure the application for different environments.
 
-### Page Descriptions
 
-- **HomePage.jsx**: The home page of the application, displaying a list of available auctions.
-- **AuctionPage.jsx**: A detailed page for a specific auction, showing all relevant information and bidding options.
-- **LoginPage.jsx**: The user login page, allowing users to authenticate and access their accounts.
+### Components
 
+- **AuctionList.jsx**: Displays a list of all auctions available on the platform.
+- **AuctionItem.jsx**: Shows detailed information about a single auction item.
+- **Navbar.jsx**: Provides navigation links to different parts of the application.
+- **HomePage.jsx**: The main landing page displaying featured auctions.
+- **AuctionPage.jsx**: Detailed view of a specific auction, including bidding options.
+- **LoginPage.jsx**: Allows users to log in to their accounts.
+
+### Routes
+
+- **auctionRoutes.jsx**: Defines API endpoints for auction-related operations such as creating, updating, and fetching auctions.
+- **userRoutes.jsx**: Manages user-related endpoints including registration, login, and profile management.
+
+### Other Features
+
+- **Authentication**: Utilizes JWT for secure user authentication and authorization.
+- **Database Interaction**: Uses Mongoose to interact with MongoDB for storing and retrieving auction and user data.
+- **Error Handling**: Implements middleware to handle errors gracefully and provide meaningful feedback to the client.
+- **Environment Configuration**: Employs environment variables to manage configuration settings for different environments.
+- **Responsive Design**: Ensures the frontend is responsive and works well on various devices and screen sizes.
 
 
 
