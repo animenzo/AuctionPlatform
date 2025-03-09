@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-const target = "http://localhost:5000/api";
+const target = "https://auctionplatform-be.onrender.com/api";
 
 export default defineConfig({
 	plugins: [react()],
