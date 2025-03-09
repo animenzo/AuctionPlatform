@@ -4,7 +4,7 @@
 ### Prerequisites
 
 -   **Node.js** (v14 or later)
--   **npm** (v6 or later) or **yarn**
+-   **npm** (v6 or later) 
 
 ### Installation
 
@@ -135,6 +135,9 @@ AuctionPlatform/
 - **HomePage.jsx**: The home page of the application, displaying a list of available auctions.
 - **AuctionPage.jsx**: A detailed page for a specific auction, showing all relevant information and bidding options.
 - **LoginPage.jsx**: The user login page, allowing users to authenticate and access their accounts.
-```
+
+
+
+
 
 
